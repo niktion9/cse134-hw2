@@ -3,10 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Part 3 Starter</title>
+    <title>QED-3000 Productivity System</title>
 </head>
+
 <body>
-    <h1>Part 3 Starter Page</h1>
-    <p>Starter file for Part 3.</p>
+    <header>
+        <hgroup>
+            <h1>QED-3000 Productivity System</h1>
+            <p>A completely serious guide to productivity, coffee, and technology.</p>
+        </hgroup>
+
+        <search>
+            <form action="#" method="get">
+                <label for="site-search">Search this page:</label>
+                <input id="site-search" name="query" type="search">
+                <button type="submit">Search</button>
+            </form>
+        </search>
+    </header>
+
+    <main>
+        <section>
+            <h2>About the QED-3000</h2>
+
+            <p>
+                The <dfn>QED-3000</dfn> is a fictional productivity system designed
+                to help users organize tasks, choose coffee, and complete ambitious projects.
+                The abbreviation <abbr title="Quickly Execute Deliverables">QED</abbr>
+                represents its central goal.
+            </p>
+
+            <p>
+                This version <ins>includes an improved focus mode</ins> and
+                <del>requires twelve cups of coffee per day</del>.
+            </p>
+
+            <figure>
+                <img
+                    src="starbucks.jpg"
+                    alt="A Starbucks coffee shop"
+                    width="400"
+                    height="300">
+                <figcaption>
+                    Coffee is an important part of the fictional QED-3000 workflow.
+                </figcaption>
+            </figure>
+
+            <blockquote>
+                <p>
+                    Productivity is not about doing everything. It is about deciding
+                    what deserves your attention.
+                </p>
+            </blockquote>
+            <p>— <cite>The Completely Serious Productivity Manual</cite></p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Personal Preferences</h2>
+
+            <form action="#" method="post">
+                <p>
+                    <label for="coffee">Favorite coffee:</label>
+                    <select id="coffee" name="coffee">
+                        <optgroup label="Common coffee">
+                            <option value="latte">Latte</option>
+                            <option value="americano">Americano</option>
+                            <option value="cappuccino">Cappuccino</option>
+                        </optgroup>
+
+                        <optgroup label="Niche coffee">
+                            <option value="cortado">Cortado</option>
+                            <option value="ristretto">Ristretto</option>
+                            <option value="affogato">Affogato</option>
+                        </optgroup>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="keyword">Coolest-sounding technology keyword:</label>
+                    <input id="keyword" name="keyword" list="keywords">
+
+                    <datalist id="keywords">
+                        <option value="Quantum">
+                        <option value="Neural Network">
+                        <option value="Blockchain">
+                        <option value="Metaverse">
+                    </datalist>
+                </p>
+
+                <button type="submit">Save Preferences</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Productivity Results</h2>
+
+            <table>
+                <caption>QED-3000 productivity results by task</caption>
+
+                <colgroup>
+                    <col style="width: 45%">
+                    <col style="width: 25%">
+                    <col style="width: 30%">
+                </colgroup>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Task</th>
+                        <th scope="col">Time Saved</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Organize assignments</td>
+                        <td>30 minutes</td>
+                        <td>Complete</td>
+                    </tr>
+                    <tr>
+                        <td>Choose a coffee</td>
+                        <td>5 minutes</td>
+                        <td>Complete</td>
+                    </tr>
+                    <tr>
+                        <td>Finish homework</td>
+                        <td>2 hours</td>
+                        <td>In progress</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Terminology</h2>
+
+            <dl>
+                <dt>Focus Mode</dt>
+                <dd>A setting that limits distractions while completing a task.</dd>
+
+                <dt>Priority Queue</dt>
+                <dd>An ordered list that places the most important work first.</dd>
+
+                <dt>Coffee Threshold</dt>
+                <dd>The amount of coffee required before beginning difficult work.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Technical Instructions</h2>
+
+            <p>
+                To begin, open a terminal and press
+                <kbd>Command</kbd> + <kbd>Space</kbd>.
+            </p>
+
+            <pre><code>git add .
+git commit -m "Complete Part 3"
+git push</code></pre>
+
+            <details>
+                <summary>View QED-3000 technical specifications</summary>
+
+                <ul>
+                    <li>Compatible with modern browsers</li>
+                    <li>Powered entirely by semantic HTML</li>
+                    <li>No JavaScript required</li>
+                    <li>Maximum coffee capacity: unlimited</li>
+                </ul>
+            </details>
+        </section>
+
+        <aside>
+            <h2>Important Note</h2>
+            <p>
+                The QED-3000 is fictional. Results may vary depending on sleep,
+                motivation, deadlines, and coffee availability.
+            </p>
+        </aside>
+
+        <section>
+            <h2>System Diagram</h2>
+
+            <svg
+                width="360"
+                height="130"
+                role="img"
+                aria-labelledby="diagram-title diagram-description">
+
+                <title id="diagram-title">QED-3000 workflow diagram</title>
+                <desc id="diagram-description">
+                    Three connected boxes representing plan, work, and complete.
+                </desc>
+
+                <rect x="10" y="35" width="90" height="50"
+                      fill="none" stroke="black"></rect>
+                <rect x="135" y="35" width="90" height="50"
+                      fill="none" stroke="black"></rect>
+                <rect x="260" y="35" width="90" height="50"
+                      fill="none" stroke="black"></rect>
+
+                <line x1="100" y1="60" x2="135" y2="60"
+                      stroke="black"></line>
+                <line x1="225" y1="60" x2="260" y2="60"
+                      stroke="black"></line>
+
+                <text x="35" y="66">Plan</text>
+                <text x="163" y="66">Work</text>
+                <text x="278" y="66">Done</text>
+            </svg>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            Questions may be sent to
+            <a href="mailto:qed@example.com">qed@example.com</a>.
+        </address>
+    </footer>
 </body>
 </html>
