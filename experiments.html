@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Experiments | Nikitha M</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        experiment-card {
+            display: block;
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="experience.html">Experience</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+            <a href="experiments.html">Experiments</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>HTML Experiments</h1>
+
+        <experiment-card>
+            <h2>Custom Semantic Element</h2>
+            <p>This custom element groups one HTML experiment.</p>
+        </experiment-card>
+
+        <section>
+            <h2>Audio</h2>
+            <audio controls>
+                <source src="media/sample-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <section>
+            <h2>Video</h2>
+            <video controls width="400">
+                <source src="media/sample-video.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </section>
+
+        <section>
+            <h2>Canvas</h2>
+            <canvas id="demo-canvas" width="300" height="150">
+                Your browser does not support canvas.
+            </canvas>
+        </section>
+
+        <section>
+            <h2>Template</h2>
+            <p>The following template is stored in the document but is not displayed.</p>
+
+            <template id="project-template">
+                <article>
+                    <h3>Template Project</h3>
+                    <p>This content is inside a template element.</p>
+                </article>
+            </template>
+        </section>
+
+        <hello-console></hello-console>
+    </main>
+
+    <footer>
+        <p>
+            <a href="index.html">Return to Portfolio</a>
+        </p>
+    </footer>
+
+    <script>
+        const canvas = document.querySelector("#demo-canvas");
+        const context = canvas.getContext("2d");
+        context.strokeRect(25, 25, 200, 80);
+        context.fillText("Canvas Experiment", 65, 70);
+
+        class HelloConsole extends HTMLElement {
+            connectedCallback() {
+                console.log("Hello World!");
+            }
+        }
+
+        customElements.define("hello-console", HelloConsole);
+    </script>
+
+</body>
+
+</html>
